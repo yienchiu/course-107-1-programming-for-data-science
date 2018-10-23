@@ -34,8 +34,8 @@ as.character(z)
 x1 <-str_sub(bankdata$年月,5,6)
 as.character(x1)
 str_c(z,x1,sep='-')->西元年月
-lubridate::ymd(西元年月)
-
+str_c(西元年月,'01',sep='-')->g
+as.Date(g)->西元年月日
 ```
 
 ## 2
