@@ -52,12 +52,12 @@ with_tz(bb,"Asia/Taipei")->bbb
 
 ```{r ans23}
 library(lubridate)
-hour(bb)->filmVotingData$hour
+hour(bbb)->filmVotingData$hour
 ```
 
 2.4 使用`table()`統計學生最活躍的填表時間。
 
 ```{r ans24}
-table(filmVotingData$Timestamp)
+table(filmVotingData$hour)
 ```
 
